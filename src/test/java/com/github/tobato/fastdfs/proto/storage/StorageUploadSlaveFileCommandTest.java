@@ -1,6 +1,6 @@
 package com.github.tobato.fastdfs.proto.storage;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -24,7 +24,7 @@ import net.coobird.thumbnailator.Thumbnails;
  * @author tobato
  *
  */
-public class StorageUploadSlaveFileCommandTest extends StorageCommandTestBase {
+public class StorageUploadSlaveFileCommandTest  extends  StorageCommandTestBase {
 
     /**
      * 文件上传测试

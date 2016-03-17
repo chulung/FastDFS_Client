@@ -11,7 +11,7 @@ import com.github.tobato.fastdfs.proto.StorageCommandTestBase;
  * @author tobato
  *
  */
-public class StorageUploadFileCommandTest extends StorageCommandTestBase {
+public class StorageUploadFileCommandTest  extends  StorageCommandTestBase {
 
     /**
      * 文件上传测试

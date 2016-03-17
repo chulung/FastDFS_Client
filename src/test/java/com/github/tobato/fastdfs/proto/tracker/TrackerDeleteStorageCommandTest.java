@@ -1,6 +1,7 @@
 package com.github.tobato.fastdfs.proto.tracker;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 import org.junit.Test;
 
@@ -8,8 +9,6 @@ import com.github.tobato.fastdfs.domain.StorageNode;
 import com.github.tobato.fastdfs.exception.FdfsServerException;
 import com.github.tobato.fastdfs.proto.ErrorCodeConstants;
 import com.github.tobato.fastdfs.proto.StorageCommandTestBase;
-import com.github.tobato.fastdfs.proto.tracker.TrackerDeleteStorageCommand;
-import com.github.tobato.fastdfs.proto.tracker.TrackerGetStoreStorageCommand;
 
 /**
  * 删除存储服务器
@@ -17,7 +16,7 @@ import com.github.tobato.fastdfs.proto.tracker.TrackerGetStoreStorageCommand;
  * @author tobato
  *
  */
-public class TrackerDeleteStorageCommandTest extends StorageCommandTestBase {
+public class TrackerDeleteStorageCommandTest  extends  StorageCommandTestBase {
 
     /**
      * 删除存储服务器

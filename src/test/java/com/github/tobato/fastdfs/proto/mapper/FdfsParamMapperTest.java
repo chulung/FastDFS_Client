@@ -1,6 +1,8 @@
 package com.github.tobato.fastdfs.proto.mapper;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 import java.nio.charset.Charset;
 import java.util.Arrays;
@@ -9,6 +11,7 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.github.tobato.fastdfs.FastdfsTestBase;
 import com.github.tobato.fastdfs.TestConstants;
 import com.github.tobato.fastdfs.proto.OtherConstants;
 
@@ -18,7 +21,7 @@ import com.github.tobato.fastdfs.proto.OtherConstants;
  * @author tobato
  *
  */
-public class FdfsParamMapperTest {
+public class FdfsParamMapperTest extends FastdfsTestBase{
 
     private static final Charset charset = TestConstants.DEFAULT_CHARSET;
 

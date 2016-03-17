@@ -7,7 +7,6 @@ import org.junit.Test;
 
 import com.github.tobato.fastdfs.domain.StorePath;
 import com.github.tobato.fastdfs.proto.StorageCommandTestBase;
-import com.github.tobato.fastdfs.proto.storage.StorageTruncateCommand;
 
 /**
  * 文件截取命令
@@ -15,7 +14,7 @@ import com.github.tobato.fastdfs.proto.storage.StorageTruncateCommand;
  * @author tobato
  *
  */
-public class StorageTruncateCommandTest extends StorageCommandTestBase {
+public class StorageTruncateCommandTest  extends  StorageCommandTestBase {
 
     @Test
     public void testStorageTruncateCommandText() throws IOException {

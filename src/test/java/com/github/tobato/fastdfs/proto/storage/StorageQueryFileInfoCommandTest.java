@@ -1,13 +1,12 @@
 package com.github.tobato.fastdfs.proto.storage;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
 import com.github.tobato.fastdfs.domain.FileInfo;
 import com.github.tobato.fastdfs.domain.StorePath;
 import com.github.tobato.fastdfs.proto.StorageCommandTestBase;
-import com.github.tobato.fastdfs.proto.storage.StorageQueryFileInfoCommand;
 
 /**
  * 文件查询处理
@@ -15,7 +14,7 @@ import com.github.tobato.fastdfs.proto.storage.StorageQueryFileInfoCommand;
  * @author tobato
  *
  */
-public class StorageQueryFileInfoCommandTest extends StorageCommandTestBase {
+public class StorageQueryFileInfoCommandTest  extends  StorageCommandTestBase {
 
     @Test
     public void testStorageQueryFileInfoCommand() {

@@ -11,7 +11,7 @@ import com.github.tobato.fastdfs.proto.StorageCommandTestBase;
  * @author tobato
  *
  */
-public class StorageDownloadCommandTest extends StorageCommandTestBase {
+public class StorageDownloadCommandTest  extends  StorageCommandTestBase {
 
     @Test
     public void testStorageDownloadCommand() {

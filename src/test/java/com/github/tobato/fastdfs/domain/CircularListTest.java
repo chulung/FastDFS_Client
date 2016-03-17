@@ -1,11 +1,13 @@
 package com.github.tobato.fastdfs.domain;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import java.util.Arrays;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import com.github.tobato.fastdfs.FastdfsTestBase;
 
 /**
  * 循环列表测试-支持列表轮询算法
@@ -13,7 +15,7 @@ import org.junit.Test;
  * @author tobato
  *
  */
-public class CircularListTest {
+public class CircularListTest extends FastdfsTestBase{
 
     private CircularList<String> list;
     private String[] strs = { "1", "2", "3", "4" };

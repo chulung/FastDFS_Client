@@ -1,12 +1,11 @@
 package com.github.tobato.fastdfs.proto.tracker;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
 import com.github.tobato.fastdfs.domain.StorageNode;
 import com.github.tobato.fastdfs.proto.CommandTestBase;
-import com.github.tobato.fastdfs.proto.tracker.TrackerGetStoreStorageCommand;
 
 /**
  * 获取存储节点交易
@@ -14,7 +13,7 @@ import com.github.tobato.fastdfs.proto.tracker.TrackerGetStoreStorageCommand;
  * @author tobato
  *
  */
-public class TrackerGetStoreStorageCommandTest extends CommandTestBase {
+public class TrackerGetStoreStorageCommandTest  extends  CommandTestBase {
 
     @Test
     public void testTrackerGetStoreStorageCommand() {

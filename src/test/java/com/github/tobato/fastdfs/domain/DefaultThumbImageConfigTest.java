@@ -1,16 +1,16 @@
 package com.github.tobato.fastdfs.domain;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.github.tobato.fastdfs.FastdfsTestApplication;
+import com.github.tobato.fastdfs.FastdfsTestBase;
 
 /**
  * 缩略图配置测试
@@ -19,8 +19,7 @@ import com.github.tobato.fastdfs.FastdfsTestApplication;
  *
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = FastdfsTestApplication.class)
-public class DefaultThumbImageConfigTest {
+public class DefaultThumbImageConfigTest extends FastdfsTestBase{
 
     /** 日志 */
     protected static Logger LOGGER = LoggerFactory.getLogger(DefaultThumbImageConfigTest.class);

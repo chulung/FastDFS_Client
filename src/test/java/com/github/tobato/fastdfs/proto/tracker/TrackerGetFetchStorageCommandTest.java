@@ -5,7 +5,6 @@ import org.junit.Test;
 import com.github.tobato.fastdfs.domain.StorageNodeInfo;
 import com.github.tobato.fastdfs.domain.StorePath;
 import com.github.tobato.fastdfs.proto.StorageCommandTestBase;
-import com.github.tobato.fastdfs.proto.tracker.TrackerGetFetchStorageCommand;
 
 /**
  * 获取源服务器
@@ -13,7 +12,7 @@ import com.github.tobato.fastdfs.proto.tracker.TrackerGetFetchStorageCommand;
  * @author tobato
  *
  */
-public class TrackerGetFetchStorageCommandTest extends StorageCommandTestBase {
+public class TrackerGetFetchStorageCommandTest  extends  StorageCommandTestBase {
 
     /**
      * 获取源服务器

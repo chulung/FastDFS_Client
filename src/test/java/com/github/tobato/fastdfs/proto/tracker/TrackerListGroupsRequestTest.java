@@ -2,6 +2,7 @@ package com.github.tobato.fastdfs.proto.tracker;
 
 import org.junit.Test;
 
+import com.github.tobato.fastdfs.FastdfsTestBase;
 import com.github.tobato.fastdfs.TestConstants;
 import com.github.tobato.fastdfs.proto.tracker.internal.TrackerListGroupsRequest;
 
@@ -11,7 +12,7 @@ import com.github.tobato.fastdfs.proto.tracker.internal.TrackerListGroupsRequest
  * @author tobato
  *
  */
-public class TrackerListGroupsRequestTest {
+public class TrackerListGroupsRequestTest extends FastdfsTestBase{
 
     @Test
     public void testGetByteContent() {

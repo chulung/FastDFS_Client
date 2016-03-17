@@ -1,6 +1,6 @@
 package com.github.tobato.fastdfs.conn;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertFalse;
 
 import java.net.InetSocketAddress;
 
@@ -12,7 +12,7 @@ import org.junit.Test;
  * @author tobato
  *
  */
-public class ConnectionPoolTest extends MockServerTestBase {
+public class ConnectionPoolTest  extends  MockServerTestBase {
 
     /**
      * 验证如何使用连接池

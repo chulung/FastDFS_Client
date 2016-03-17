@@ -1,6 +1,7 @@
 package com.github.tobato.fastdfs.service;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -11,14 +12,11 @@ import java.util.Set;
 
 import org.apache.commons.io.FilenameUtils;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.SpringApplicationConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.github.tobato.fastdfs.FastdfsTestApplication;
+import com.github.tobato.fastdfs.FastdfsTestBase;
 import com.github.tobato.fastdfs.TestConstants;
 import com.github.tobato.fastdfs.TestUtils;
 import com.github.tobato.fastdfs.domain.FileInfo;
@@ -33,9 +31,7 @@ import com.github.tobato.fastdfs.domain.ThumbImageConfig;
  * @author tobato
  *
  */
-@RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = FastdfsTestApplication.class)
-public class FastFileStorageClientTest {
+public class FastFileStorageClientTest extends FastdfsTestBase{
 
     @Autowired
     protected FastFileStorageClient storageClient;

@@ -1,6 +1,7 @@
 package com.github.tobato.fastdfs.service;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertNotNull;
 
 import java.io.IOException;
 
@@ -17,7 +18,7 @@ import com.github.tobato.fastdfs.proto.storage.DownloadByteArray;
  * @author tobato
  *
  */
-public class StorageClientAppendFileTest extends StorageClientTestBase {
+public class StorageClientAppendFileTest  extends  StorageClientTestBase {
 
     /**
      * 支持断点续传的文件操作测试

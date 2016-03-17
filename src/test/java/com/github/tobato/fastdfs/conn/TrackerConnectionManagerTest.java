@@ -1,6 +1,7 @@
 package com.github.tobato.fastdfs.conn;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 import java.util.Arrays;
 import java.util.List;
@@ -9,6 +10,7 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.github.tobato.fastdfs.FastdfsTestBase;
 import com.github.tobato.fastdfs.TestConstants;
 import com.github.tobato.fastdfs.domain.GroupState;
 import com.github.tobato.fastdfs.exception.FdfsConnectException;
@@ -20,7 +22,7 @@ import com.github.tobato.fastdfs.proto.tracker.TrackerListGroupsCommand;
  * @author tobato
  *
  */
-public class TrackerConnectionManagerTest {
+public class TrackerConnectionManagerTest extends FastdfsTestBase{
 
     /** 日志 */
     protected static Logger LOGGER = LoggerFactory.getLogger(TrackerConnectionManagerTest.class);

@@ -15,7 +15,7 @@ import org.slf4j.LoggerFactory;
  * @author tobato
  *
  */
-public class FdfsMockSocketServer extends Thread {
+public class FdfsMockSocketServer  extends  Thread {
 
     /** 日志 */
     private static final Logger LOGGER = LoggerFactory.getLogger(FdfsMockSocketServer.class);

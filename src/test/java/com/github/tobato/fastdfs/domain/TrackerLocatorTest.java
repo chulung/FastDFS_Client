@@ -1,6 +1,10 @@
 package com.github.tobato.fastdfs.domain;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 import java.net.InetSocketAddress;
 import java.util.Arrays;
@@ -10,6 +14,7 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.github.tobato.fastdfs.FastdfsTestBase;
 import com.github.tobato.fastdfs.exception.FdfsUnavailableException;
 
 /**
@@ -18,7 +23,7 @@ import com.github.tobato.fastdfs.exception.FdfsUnavailableException;
  * @author tobato
  *
  */
-public class TrackerLocatorTest {
+public class TrackerLocatorTest extends FastdfsTestBase{
 
     /** 日志 */
     protected static Logger LOGGER = LoggerFactory.getLogger(TrackerLocatorTest.class);
@@ -35,11 +40,11 @@ public class TrackerLocatorTest {
         InetSocketAddress addressA = getAddress(locator, "获取地址A");
         InetSocketAddress addressB = getAddress(locator, "获取地址B");
         // 地址轮询
-        assertNotEquals(addressA, addressB);
+        assertFalse(addressA.equals(addressB));
         // IF 连接断开
         locator.setInActive(addressA);
         InetSocketAddress addressC = getAddress(locator, "获取地址C");
-        assertNotEquals(addressA, addressC);
+        assertFalse(addressA.equals(addressC));
         // 只剩一个地址
         assertEquals(addressB, addressC);
         // 连接恢复

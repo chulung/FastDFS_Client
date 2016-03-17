@@ -1,6 +1,9 @@
 package com.github.tobato.fastdfs.service;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -20,7 +23,7 @@ import com.github.tobato.fastdfs.proto.ErrorCodeConstants;
  * @author tobato
  *
  */
-public class StorageClientMetadataTest extends StorageClientTestBase {
+public class StorageClientMetadataTest  extends  StorageClientTestBase {
 
     @Test
     public void testMetadataOperator() {

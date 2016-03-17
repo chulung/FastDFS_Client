@@ -1,6 +1,7 @@
 package com.github.tobato.fastdfs.conn;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 /**
  * socket连接测试
@@ -8,7 +9,7 @@ import static org.junit.Assert.*;
  * @author tobato
  *
  */
-public class ConnectionTest extends MockServerTestBase {
+public class ConnectionTest  extends  MockServerTestBase {
 
     // @Test
     public void testClose() {

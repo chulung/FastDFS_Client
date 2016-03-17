@@ -1,6 +1,6 @@
 package com.github.tobato.fastdfs.proto.storage;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -9,7 +9,6 @@ import org.junit.Test;
 
 import com.github.tobato.fastdfs.domain.StorePath;
 import com.github.tobato.fastdfs.proto.StorageCommandTestBase;
-import com.github.tobato.fastdfs.proto.storage.StorageAppendFileCommand;
 
 /**
  * 文件续传命令
@@ -17,7 +16,7 @@ import com.github.tobato.fastdfs.proto.storage.StorageAppendFileCommand;
  * @author tobato
  *
  */
-public class StorageAppendFileCommandTest extends StorageCommandTestBase {
+public class StorageAppendFileCommandTest  extends  StorageCommandTestBase {
 
     /**
      * 文件续传需要先使用 append模式Save一个可以续传的文件

@@ -1,11 +1,15 @@
 package com.github.tobato.fastdfs.domain;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.github.tobato.fastdfs.FastdfsTestBase;
 import com.github.tobato.fastdfs.exception.FdfsUnsupportStorePathException;
 
 /**
@@ -14,7 +18,7 @@ import com.github.tobato.fastdfs.exception.FdfsUnsupportStorePathException;
  * @author tobato
  *
  */
-public class StorePathTest {
+public class StorePathTest extends FastdfsTestBase{
 
     /** 日志 */
     protected static Logger LOGGER = LoggerFactory.getLogger(StorePathTest.class);

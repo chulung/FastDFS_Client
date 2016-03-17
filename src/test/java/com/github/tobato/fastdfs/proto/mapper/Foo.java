@@ -1,7 +1,6 @@
 package com.github.tobato.fastdfs.proto.mapper;
 
 import com.github.tobato.fastdfs.proto.OtherConstants;
-import com.github.tobato.fastdfs.proto.mapper.FdfsColumn;
 
 /**
  * 测试类

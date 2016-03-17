@@ -17,7 +17,7 @@ import com.github.tobato.fastdfs.proto.storage.enums.StorageMetdataSetType;
  * @author tobato
  *
  */
-public class StorageSetMetadataCommandTest extends StorageCommandTestBase {
+public class StorageSetMetadataCommandTest  extends  StorageCommandTestBase {
 
     /**
      * 文件上传测试

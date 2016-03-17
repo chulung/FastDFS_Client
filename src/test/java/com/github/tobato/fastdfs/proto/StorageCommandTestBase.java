@@ -1,6 +1,6 @@
 package com.github.tobato.fastdfs.proto;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
@@ -21,7 +21,7 @@ import com.github.tobato.fastdfs.proto.storage.StorageUploadFileCommand;
  * @author tobato
  *
  */
-public abstract class StorageCommandTestBase extends CommandTestBase {
+public abstract class StorageCommandTestBase  extends  CommandTestBase {
 
     /**
      * 文件上传操作

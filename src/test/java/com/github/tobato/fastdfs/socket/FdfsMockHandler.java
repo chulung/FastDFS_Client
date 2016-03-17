@@ -13,7 +13,7 @@ import org.slf4j.LoggerFactory;
  * @author tobato
  *
  */
-public class FdfsMockHandler extends Thread {
+public class FdfsMockHandler  extends  Thread {
 
     /** 日志 */
     private static final Logger LOGGER = LoggerFactory.getLogger(FdfsMockHandler.class);

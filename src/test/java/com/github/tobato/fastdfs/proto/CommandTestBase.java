@@ -7,7 +7,6 @@ import com.github.tobato.fastdfs.TestConstants;
 import com.github.tobato.fastdfs.conn.ConnectionManager;
 import com.github.tobato.fastdfs.conn.FdfsConnectionPool;
 import com.github.tobato.fastdfs.conn.PooledConnectionFactory;
-import com.github.tobato.fastdfs.proto.FdfsCommand;
 
 /**
  * command测试基类

@@ -1,6 +1,6 @@
 package com.github.tobato.fastdfs.proto.tracker;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 import java.util.List;
 
@@ -9,7 +9,6 @@ import org.junit.Test;
 import com.github.tobato.fastdfs.TestConstants;
 import com.github.tobato.fastdfs.domain.StorageState;
 import com.github.tobato.fastdfs.proto.CommandTestBase;
-import com.github.tobato.fastdfs.proto.tracker.TrackerListStoragesCommand;
 
 /**
  * 列举存储目录服务器状态
@@ -17,7 +16,7 @@ import com.github.tobato.fastdfs.proto.tracker.TrackerListStoragesCommand;
  * @author tobato
  *
  */
-public class TrackerListStoragesCommandTest extends CommandTestBase {
+public class TrackerListStoragesCommandTest  extends  CommandTestBase {
 
     @Test
     public void testGroupAndIp() {

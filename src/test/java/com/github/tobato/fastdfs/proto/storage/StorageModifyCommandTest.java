@@ -7,7 +7,6 @@ import org.junit.Test;
 
 import com.github.tobato.fastdfs.domain.StorePath;
 import com.github.tobato.fastdfs.proto.StorageCommandTestBase;
-import com.github.tobato.fastdfs.proto.storage.StorageModifyCommand;
 
 /**
  * 文件修改命令
@@ -15,7 +14,7 @@ import com.github.tobato.fastdfs.proto.storage.StorageModifyCommand;
  * @author tobato
  *
  */
-public class StorageModifyCommandTest extends StorageCommandTestBase {
+public class StorageModifyCommandTest  extends  StorageCommandTestBase {
 
     @Test
     public void testStorageModifyCommand() throws IOException {

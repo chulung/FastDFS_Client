@@ -17,7 +17,7 @@ import com.github.tobato.fastdfs.service.AppendFileStorageClient;
  * @author tobato
  *
  */
-public class PerformanceTest {
+public class PerformanceTest  extends  FastdfsTestBase{
 
     @Autowired
     protected AppendFileStorageClient storageClient;

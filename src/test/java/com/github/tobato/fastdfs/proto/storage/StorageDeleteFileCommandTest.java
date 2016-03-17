@@ -4,9 +4,8 @@ import org.junit.Test;
 
 import com.github.tobato.fastdfs.domain.StorePath;
 import com.github.tobato.fastdfs.proto.StorageCommandTestBase;
-import com.github.tobato.fastdfs.proto.storage.StorageDeleteFileCommand;
 
-public class StorageDeleteFileCommandTest extends StorageCommandTestBase {
+public class StorageDeleteFileCommandTest  extends  StorageCommandTestBase {
 
     /**
      * 文件删除测试

@@ -6,10 +6,8 @@ import java.nio.charset.Charset;
 import org.apache.commons.pool2.BaseKeyedPooledObjectFactory;
 import org.apache.commons.pool2.PooledObject;
 import org.apache.commons.pool2.impl.DefaultPooledObject;
-import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-
-import com.github.tobato.fastdfs.FdfsClientConstants;
 
 /**
  * pooled FdfsSocket factory
@@ -22,7 +20,6 @@ import com.github.tobato.fastdfs.FdfsClientConstants;
  *
  */
 @Component
-@ConfigurationProperties(prefix = FdfsClientConstants.ROOT_CONFIG_PREFIX)
 public class PooledConnectionFactory extends BaseKeyedPooledObjectFactory<InetSocketAddress, Connection> {
 
     /** 读取时间 */
@@ -59,7 +56,8 @@ public class PooledConnectionFactory extends BaseKeyedPooledObjectFactory<InetSo
     public int getSoTimeout() {
         return soTimeout;
     }
-
+    
+    @Value("${fdfs.soTimeout}")
     public void setSoTimeout(int soTimeout) {
         this.soTimeout = soTimeout;
     }
@@ -68,6 +66,7 @@ public class PooledConnectionFactory extends BaseKeyedPooledObjectFactory<InetSo
         return connectTimeout;
     }
 
+    @Value("${fdfs.connectTimeout}")
     public void setConnectTimeout(int connectTimeout) {
         this.connectTimeout = connectTimeout;
     }

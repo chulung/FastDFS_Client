@@ -1,10 +1,13 @@
 package com.github.tobato.fastdfs.domain;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import java.net.InetSocketAddress;
 
 import org.junit.Test;
+
+import com.github.tobato.fastdfs.FastdfsTestBase;
 
 /**
  * TrackerAddressHolder测试
@@ -12,7 +15,7 @@ import org.junit.Test;
  * @author tobato
  *
  */
-public class TrackerAddressHolderTest {
+public class TrackerAddressHolderTest extends FastdfsTestBase{
 
     @Test
     public void testCanTryToConnect() throws InterruptedException {
