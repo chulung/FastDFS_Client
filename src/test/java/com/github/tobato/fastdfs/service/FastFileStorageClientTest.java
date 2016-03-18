@@ -55,6 +55,7 @@ public class FastFileStorageClientTest extends FastdfsTestBase{
         // 上传文件和Metadata
         StorePath path = storageClient.uploadFile(file.getInputStream(), file.getFileSize(), file.getFileExtName(),
                 metaDataSet);
+        LOGGER.info("返回文件path={}",path);
         assertNotNull(path);
 
         // 验证获取MataData

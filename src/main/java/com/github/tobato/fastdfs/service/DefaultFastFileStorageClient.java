@@ -51,6 +51,7 @@ public class DefaultFastFileStorageClient extends DefaultGenerateStorageClient i
         Validate.notNull(inputStream, "上传文件流不能为空");
         Validate.notBlank(fileExtName, "文件扩展名不能为空");
         StorageNode client = trackerClient.getStoreStorage();
+        LOGGER.debug("获取到storageNode:{}",client);
         return uploadFileAndMateData(client, inputStream, fileSize, fileExtName, metaDataSet);
     }
 

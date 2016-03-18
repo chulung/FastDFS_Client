@@ -163,20 +163,20 @@ class FieldMateData {
         } else if (String.class.equals(field.getType())) {
             // 如果是动态属性
             return BytesUtil.objString2Byte((String) value, max, charset);
-        } else if (Long.class.equals(field.getType())) {
-            return BytesUtil.long2buff((Long) value);
-        } else if (Integer.class.equals(field.getType())) {
-            return BytesUtil.long2buff((Integer) value);
+        } else if (long.class==field.getType() || Long.class==field.getType()) {
+            return BytesUtil.long2buff((long) value);
+        } else if (int.class.equals(field.getType()) || Integer.class.equals(field.getType())) {
+            return BytesUtil.long2buff((int) value);
         } else if (Date.class.equals(field.getType())) {
             throw new FdfsColumnMapException("Date 还不支持");
-        } else if (Byte.class.equals(field.getType())) {
+        } else if (byte.class==field.getType()|| Byte.class==field.getType()) {
             byte[] result = new byte[1];
             result[0] = (Byte) value;
             return result;
         } else if (boolean.class.equals(field.getType())) {
             throw new FdfsColumnMapException("boolean 还不支持");
         }
-        throw new FdfsColumnMapException("将属性值转换为byte时未识别的FdfsColumn类型" + field.getName());
+        throw new FdfsColumnMapException("将属性值转换为byte时未识别的FdfsColumn类型" + field.getName()+":"+field.getType());
     }
 
     /**
