@@ -164,9 +164,9 @@ class FieldMateData {
             // 如果是动态属性
             return BytesUtil.objString2Byte((String) value, max, charset);
         } else if (long.class==field.getType() || Long.class==field.getType()) {
-            return BytesUtil.long2buff((long) value);
+            return BytesUtil.long2buff((Long) value);
         } else if (int.class.equals(field.getType()) || Integer.class.equals(field.getType())) {
-            return BytesUtil.long2buff((int) value);
+            return BytesUtil.long2buff((Integer) value);
         } else if (Date.class.equals(field.getType())) {
             throw new FdfsColumnMapException("Date 还不支持");
         } else if (byte.class==field.getType()|| Byte.class==field.getType()) {
