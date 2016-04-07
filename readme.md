@@ -1,8 +1,7 @@
 ##readme
-这个版本是我重构了tobato的版本，将他使用的spring-boot框架转化为普通spring框架以适应个人项目需要
+这个版本是我重构了tobato同学的版本，将他使用的spring-boot框架转化为普通spring框架以适应个人项目需要
 配置文件方式和部分注解做了修改
-
-##以下tobato版本的readme
+[tobato的spring-boot版](https://github.com/tobato/FastDFS_Client)
 
 FastDFS-Client
 ---
