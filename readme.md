@@ -1,16 +1,14 @@
 ##readme
-这个版本是我重构了tobato同学的版本，将他使用的spring-boot框架转化为普通spring框架以适应个人项目需要
-配置文件方式和部分注解做了修改
-[tobato的spring-boot版](https://github.com/tobato/FastDFS_Client)
 
 FastDFS-Client
 ---
 
 This is a java client lib for [FastDFS](https://github.com/happyfish100/fastdfs).
 
-##介绍
+这个版本是我重构了tobato同学的版本，将他使用的spring-boot框架转化为普通spring框架以适应个人项目需要
+配置文件方式和部分注解做了修改
+[tobato的spring-boot版](https://github.com/tobato/FastDFS_Client)
 
-在原作者YuQing与yuqih发布的java客户端基础上进行了大量重构工作，便于Java工作者学习与阅读。
 
 主要特性
 
@@ -21,14 +19,9 @@ This is a java client lib for [FastDFS](https://github.com/happyfish100/fastdfs)
 
 ##运行环境要求
 
-由于笔者主要工作环境是SpringBoot，因此目前客户端主要依赖于SpringBoot
-
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-parent</artifactId>
-    <version>1.2.7.RELEASE</version>
-    <relativePath />
+Spirng4
     
-JDK环境要求  1.7
+JDK环境要求  1.7+
 
 ##单元测试
 
@@ -70,35 +63,46 @@ Maven依赖为
 
 ###2.将Fdfs配置引入项目
 
-将FastDFS-Client客户端引入本地化项目的方式非常简单，在SpringBoot项目当中
+可参考我使用的http封装的web项目
+[DFS-server](https://github.com/wenchukai/wenchukai.com/tree/master/DFS-server)
+在spring中配置扫描
 
-    /**
-     * 导入FastDFS-Client组件
-     * 
-     * @author tobato
-     *
-     */
-    @Configuration
-    @Import(FdfsClientConfig.class)
-    public class ComponetImport {
-        // 导入依赖组件
-    }
+	<context:component-scan base-package="com.github.tobato" />
+	<context:component-scan base-package="com.wenchukai.dfs" />
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<!--fastdfs.properties路径-->
+				<value>file:${catalina.home}/conf/fastdfs.properties</value> 
+			</list>
+		</property>
+	</bean>
+	
+	//注入storageClient类
+	
+	@Autowired
+	protected FastFileStorageClient storageClient;
     
-是的，只需要一行注解 @Import(FdfsClientConfig.class)
+  
 
-###3.在application.yml当中配置Fdfs相关参数
-    # ===================================================================
-    # 分布式文件系统FDFS配置
-    # ===================================================================
-    fdfs:
-      soTimeout: 1501
-      connectTimeout: 601 
-      thumbImage:             #缩略图生成参数
-        width: 150
-        height: 150
-      trackerList:            #TrackerList参数,支持多个
-        - 192.168.1.105:22122
-        - 192.168.1.106:22122 
+###3.在fastdfs.properties当中配置Fdfs相关参数
+# ===================================================================
+# fastdfs配置
+# ===================================================================
+
+fdfs.soTimeout=1501
+fdfs.connectTimeout=601 
+
+#缩略图配置
+fdfs.thumbImage.width=150
+fdfs.thumbImage.height=150
+
+# ,号隔开的host:port列表
+fdfs.trackerList=192.168.1.133:22122
+
+#
+fast.webServerUrl=
 
 ###4.使用接口服务对Fdfs服务端进行操作
 
