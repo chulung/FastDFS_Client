@@ -91,22 +91,23 @@ Maven依赖为
   
 
 ###3.在fastdfs.properties当中配置Fdfs相关参数
-# ===================================================================
-# fastdfs配置
-# ===================================================================
 
-fdfs.soTimeout=1501
-fdfs.connectTimeout=601 
-
-#缩略图配置
-fdfs.thumbImage.width=150
-fdfs.thumbImage.height=150
-
-# ,号隔开的host:port列表
-fdfs.trackerList=192.168.1.133:22122
-
-#
-fast.webServerUrl=
+	# ===================================================================
+	# fastdfs配置
+	# ===================================================================
+	
+	fdfs.soTimeout=1501
+	fdfs.connectTimeout=601 
+	
+	#缩略图配置
+	fdfs.thumbImage.width=150
+	fdfs.thumbImage.height=150
+	
+	# ,号隔开的host:port列表
+	fdfs.trackerList=192.168.1.133:22122
+	
+	#
+	fast.webServerUrl=
 
 ###4.使用接口服务对Fdfs服务端进行操作
 
