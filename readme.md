@@ -67,12 +67,12 @@ Maven依赖为
 可参考我使用的http封装的web项目
 
 
-[DFS-server](https://github.com/wenchukai/wenchukai.com/tree/master/DFS-server)
+[DFS-server](https://github.com/chulung/chulung.com/tree/master/DFS-server)
 
 在spring中配置扫描
 
 	<context:component-scan base-package="com.github.tobato" />
-	<context:component-scan base-package="com.wenchukai.dfs" />
+	<context:component-scan base-package="com.chulung.dfs" />
 	<bean id="propertyConfigurer"
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 		<property name="locations">
