@@ -64,11 +64,6 @@ Maven依赖为
 
 ###2.将Fdfs配置引入项目
 
-可参考我使用的http封装的web项目
-
-
-[DFS-server](https://github.com/chulung/chulung.com/tree/master/DFS-server)
-
 在spring中配置扫描
 
 	<context:component-scan base-package="com.github.tobato" />
@@ -90,7 +85,7 @@ Maven依赖为
     
   
 
-###3.在fastdfs.properties当中配置Fdfs相关参数
+###3.在fastdfs.properties当中配置相关参数
 
 	# ===================================================================
 	# fastdfs配置
@@ -106,7 +101,7 @@ Maven依赖为
 	# ,号隔开的host:port列表
 	fdfs.trackerList=192.168.1.133:22122
 	
-	#
+	#无需配置
 	fast.webServerUrl=
 
 ###4.使用接口服务对Fdfs服务端进行操作
