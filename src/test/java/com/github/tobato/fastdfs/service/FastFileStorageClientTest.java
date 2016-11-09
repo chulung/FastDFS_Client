@@ -57,6 +57,7 @@ public class FastFileStorageClientTest extends FastdfsTestBase{
                 metaDataSet);
         LOGGER.info("返回文件path={}",path);
         assertNotNull(path);
+        LOGGER.debug("上传文件路径{}", path);
 
         // 验证获取MataData
         LOGGER.debug("##获取Metadata##");
@@ -92,6 +93,7 @@ public class FastFileStorageClientTest extends FastdfsTestBase{
         LOGGER.debug("##上传文件..##");
         Set<MateData> metaDataSet = createMateData();
         StorePath path = uploadImageAndCrtThumbImage(TestConstants.PERFORM_FILE_PATH, metaDataSet);
+        LOGGER.debug("上传文件路径{}", path);
 
         // 验证获取MataData
         LOGGER.debug("##获取Metadata##");

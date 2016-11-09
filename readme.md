@@ -1,6 +1,8 @@
+
 ##readme
 
 FastDFS-Client
+
 ---
 
 This is a java client lib for [FastDFS](https://github.com/happyfish100/fastdfs).
@@ -58,7 +60,7 @@ Maven依赖为
     <dependency>
         <groupId>com.github.tobato</groupId>
         <artifactId>fastdfs-client</artifactId>
-        <version>1.25.1-RELEASE</version>
+        <version>1.25.2-RELEASE</version>
     </dependency>
 
 
