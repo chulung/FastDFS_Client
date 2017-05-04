@@ -22,7 +22,7 @@ This is a java client lib for [FastDFS](https://github.com/happyfish100/fastdfs)
 
 ##运行环境要求
 
-Spirng4
+spring 4.x
     
 JDK环境要求  1.7+
 
